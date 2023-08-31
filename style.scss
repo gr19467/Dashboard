@@ -15,7 +15,29 @@
     display: $display;
     flex-direction: $direction;
 }
+@mixin left($width, $left, $text ) {
+    width: $width;
+    margin-left: $left;
+    font-size: $text;
+}
 body {
     @extend %background;
-    @include aligning()
+    
+}
+.leftBar {
+    background-color: white;
+    @include left(250px, 0px, 15px);
+
+}
+.pages {
+    background-color: partial.$sideBlue;
+}
+.tab {
+    background-color: partial.$sideDarkBlue;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.logo  {
+    padding: 15px;
+    text-align: center;
 }

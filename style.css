@@ -1,4 +1,26 @@
 body {
-  background-color: #e5ebf2;
+  background-color: #d3dbe4;
   margin: 0;
+}
+
+.leftBar {
+  background-color: white;
+  width: 250px;
+  margin-left: 0px;
+  font-size: 15px;
+}
+
+.pages {
+  background-color: #627e9c;
+}
+
+.tab {
+  background-color: #455c74;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.logo {
+  padding: 15px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
