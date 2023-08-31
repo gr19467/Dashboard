@@ -8,17 +8,19 @@ body {
   width: 270px;
   margin-left: 0px;
   font-size: 15px;
+  margin: 0px;
 }
 
 .pages {
   background-color: #465e78;
-  margin-top: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .tab {
   background-color: #3e5268;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .logo {
@@ -29,4 +31,10 @@ body {
 .pages img, .tab img {
   width: 25px;
   height: 25px;
+  margin-right: 5px;
+}
+
+.pages div {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */

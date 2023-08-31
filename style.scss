@@ -31,16 +31,18 @@ body {
 .leftBar {
     background-color: white;
     @include left(270px, 0px, 15px);
+    margin: 0px;
 
 }
 .pages {
     background-color: partial.$sideBlue;
-    margin-top: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
 .tab {
     background-color: partial.$sideDarkBlue;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin: 0px;
 }
 .logo  {
     padding: 15px;
@@ -48,4 +50,12 @@ body {
 }
 .pages img, .tab img {
     @include images(25px, 25px);
+    margin-right: 5px;
 }
+.pages div {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
