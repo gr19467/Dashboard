@@ -1,0 +1,21 @@
+@use 'partial';
+
+%background {
+    background-color: partial.$backgroundColor;
+    margin: 0;
+}
+%box {
+    width: 300px;
+    height: 300px;
+}
+%border {
+    border-radius: 10px;
+}
+@mixin aligning($display, $direction) {
+    display: $display;
+    flex-direction: $direction;
+}
+body {
+    @extend %background;
+    @include aligning()
+}
