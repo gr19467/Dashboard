@@ -11,6 +11,10 @@
 %border {
     border-radius: 10px;
 }
+@mixin images($width, $height) {
+width: $width;
+height: $height;
+}
 @mixin aligning($display, $direction) {
     display: $display;
     flex-direction: $direction;
@@ -26,11 +30,12 @@ body {
 }
 .leftBar {
     background-color: white;
-    @include left(250px, 0px, 15px);
+    @include left(270px, 0px, 15px);
 
 }
 .pages {
     background-color: partial.$sideBlue;
+    margin-top: 0px;
 }
 .tab {
     background-color: partial.$sideDarkBlue;
@@ -40,4 +45,7 @@ body {
 .logo  {
     padding: 15px;
     text-align: center;
+}
+.pages img, .tab img {
+    @include images(25px, 25px);
 }
