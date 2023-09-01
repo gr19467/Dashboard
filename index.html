@@ -16,10 +16,10 @@
     <!--Left Bar-->
     <div class="leftBar">
         <div class="logo">
-           <img src="images/samsung-logo.webp" alt="">
+           <img src="/Images/samsung-logo.webp" alt="">
         </div>
         <div class="tab">
-            <img src="/Images/ron-swanson.jpeg" alt="" id="ronny">
+            <img src="/Images/ron-swanson.avif" alt="">
             <h1>RON SWANSON</h1>
             <a href="settings.html" class="settings"><img src="/Images/settings.png" alt="" ></a>
         </div>
@@ -27,8 +27,7 @@
             <img src="/Images/admin.png" alt=""><h1>ADMIN</h1>
         </div>
         <div class="pages">
-            <span class="smallBlueThing"><span id="blue"></span>
-            <div><img src="/Images/white-house.gif" alt=""><h1>HOME</h1></div></span>
+            <div><img src="/Images/white-house.gif" alt=""><h1>HOME</h1></div>
             <div><img src="/Images/inbox.png" alt=""><h1>INBOX</h1><div class="two">2</div></div>
             <div><img src="/Images/devices.png" alt=""><h1>DEVICES</h1></div>
             <div><img src="/Images/publications.png" alt=""><h1>PUBLICATIONS</h1></div>
@@ -57,113 +56,149 @@
         </div>
     </div>
 
-    <div class="notification">
-        <img src="/Images/calendar2.png" alt="" id="calendar">
-        <h1>JetBlue Christmas Party is</h1>
-        <h1 class="bold">Today at 7pm.</h1>
-        <a href="" id="details"><h1>See details.</h1></a>
-    </div>
-
-    <!--Main Area-->
-
-    <div class="mainArea">
-        <div class="box">
-            <div class="boxHeader">
-                <h1>Welcome, Ron</h1>
+        <!--Main Area-->
+        <div class="mainArea">
+            <div class="notification">
+                <img src="/Images/calendar2.png" alt="" id="calendar">
+                <h1>JetBlue Christmas Party is</h1>
+                <h1 class="bold">Today at 7pm.</h1>
+                <a href="" id="details"><h1>See details.</h1></a>
             </div>
-            <div class="boxArea">
-                <img src="/Images/ron-swanson.avif" alt="" id="mainpfp">
-                <label for="cars">Logged in as</label>
-                <select>
-                    <option value="volvo">BITS Administrator</option>
-                    <option value="saab">Employee</option>
-                </select>
-                <input type="checkbox"><h2>Keep me logged in today</h2>
-            </div>
-            <div class="boxFooter">
-                <a href="">My Profile ></a>
-            </div>
-        </div>
 
-        <div class="box">
-            <div class="boxHeader">
-                <img src="/Images/alert.png" alt="">
-                <h1>Alerts</h1>
-                <div class="add">
-                    <img src="/Images/plus.png" alt=""><h2>New</h2>
+            <div class="boxes">
+                <!--First two boxes-->
+                <div class="boxRow">
+                    <div class="box">
+                        <div class="boxHeader">
+                            <h1>Welcome, Ron</h1>
+                        </div>
+                        <div class="boxArea">
+                            <img src="/Images/ron-swanson.avif" alt="" id="mainpfp">
+                            <label for="cars">Logged in as</label>
+                            <select>
+                                <option value="volvo">BITS Administrator</option>
+                                <option value="saab">Employee</option>
+                            </select>
+                            <input type="checkbox"><h2>Keep me logged in today</h2>
+                        </div>
+                        <div class="boxFooter">
+                            <a href="">My Profile ></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="boxHeader">
+                            <img class="icon" src="/Images/inbox2.png" alt="">
+                            <h1>Inbox</h1>
+                            <div class="add">
+                                <img class="icon" src="/Images/compose.png" alt=""><h2>Compose</h2>
+                            </div>
+                        </div>
+                        <div class="boxArea">
+
+                            <div class="message">
+                                <img class="pfp" src="/Images/april-ludgate.heic" alt=""><h2 class="lighter">11-29-14</h2><h2 class="bold">Hi everyone, we just wanted to let you kno...</h2>
+                            </div>
+                            
+                            <div class="message">
+                                <img class="pfp" src="/Images/andy-dwyer.jpg" alt=""><h2 class="lighter">11-28-14</h2><h2 class="bold">Ron, thanks again for sending me the docu...</h2>
+                            </div>
+
+                            <div class="message">
+                                <img class="pfp" src="/Images/ben-wyatt.webp" alt=""><h2 class="lighter">11-19-14</h2><h2 class="bold">Just a reminder that tomorrow will be the...</h2>
+                            </div>
+
+                            <div class="message">
+                                <img class="pfp" src="/Images/tom-haverford.jpg" alt=""><h2 class="lighter">11-11-14</h2><h2>Our meeting tomorrow has been moved fr...</h2>
+                            </div>
+                            
+                            <div class="message">
+                                <img class="pfp" src="/Images/donna-meagle.jpg" alt=""><h2 class="lighter">11-10-14</h2><h2>A big thanks to everyone who showed up...</h2>
+                            </div>
+
+                        </div>
+                        <div class="boxFooter">
+                            <a href="">More ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Second two boxes-->
+                <div class="boxRow">
+                    <div class="box">
+                        <div class="boxHeader">
+                            <img class="icon" src="/Images/alert.png" alt="">
+                            <h1>Alerts</h1>
+                            <div class="add">
+                                <img class="icon" src="/Images/plus.png" alt=""><h2>New</h2>
+                            </div>
+                        </div>
+                        <div class="boxArea">
+                            <div class="message">
+                                <h2 class="lighter">11-30-14</h2><h2 class="bold">Maintenence will be happening this weekend fr...</h2>
+                            </div>
+
+                            <div class="message">
+                                <h2 class="lighter">11-28-14</h2><h2>Thanks for your patience. Downtime will continu...</h2>
+                            </div>
+
+                            <div class="message">
+                                <h2 class="lighter">11-19-14</h2><h2>Your credentials are out of date.</h2>
+                            </div>
+
+                            <div class="message">
+                                <h2 class="lighter">11-11-14</h2><h2>Hi everyone, we just wanted to let you know tha...</h2>
+                            </div>
+
+                            <div class="message">
+                                <h2 class="lighter">11-07-14</h2><h2>Be sure to update your profile before the last da...</h2>
+                            </div>    
+                        </div>
+                        <div class="boxFooter">
+                            <a href="">More ></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="subBox">
+                            <h2 class="red">13</h2>
+                            <img class="subImg" src="/Images/alarm.png" alt="">
+                            <h2>Outstanding required publications/communications</h2>
+                        </div>
+
+                        <div class="subBox">
+                            <h2 class="subImg" class="blue">6</h2>
+                            <img src="/Images/file.png" alt="">
+                            <h2>Non-required publications or communications</h2>
+                        </div>
+
+                        <div class="subBox">
+                            <h2 class="blue">28</h2>
+                            <img class="subImg" src="/Images/briefcase.png" alt="">
+                            <h2>Assigned training courses</h2>
+                        </div>
+
+                        <div class="subBox">
+                            <h2 class="red">9</h2>
+                            <img class="subImg" src="/Images/bubble.png" alt="">
+                            <h2>Open user feedback items</h2>
+                        </div>
+
+                        <div class="subBox">
+                            <h2 class="blue">11</h2>
+                            <img class="subImg" src="/Images/calendar.png" alt="">
+                            <h2>Scheduled events</h2>
+                        </div>
+
+                        <div class="subBox">
+                            <h2 class="blue">13</h2>
+                            <img class="subImg" src="/Images/check.png" alt="">
+                            <h2>Project tasks pending your action</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="boxArea">
-                <h2 class="lighter">11-30-14</h2><h2 class="bold">Maintenence will be happening this weekend fr...</h2>
-                <h2 class="lighter">11-28-14</h2><h2>Thanks for your patience. Downtime will continu...</h2>
-                <h2 class="lighter">11-19-14</h2><h2>Your credentials are out of date.</h2>
-                <h2 class="lighter">11-11-14</h2><h2>Hi everyone, we just wanted to let you know tha...</h2>
-                <h2 class="lighter">11-07-14</h2><h2>Be sure to update your profile before the last da...</h2>
-            </div>
-            <div class="boxFooter">
-                <a href="">More ></a>
-            </div>
         </div>
-
-        <div class="box">
-            <div class="boxHeader">
-                <img src="/Images/inbox2.png" alt="">
-                <h1>Alerts</h1>
-                <div class="add">
-                    <img src="/Images/compose.png" alt=""><h2>Compose</h2>
-                </div>
-            </div>
-            <div class="boxArea">
-                <img class="pfp" src="/Images/april-ludgate.heic" alt=""><h2 class="lighter">11-29-14</h2><h2 class="bold">Hi everyone, we just wanted to let you kno...</h2>
-                <img class="pfp" src="/Images/andy-dwyer.jpg" alt=""><h2 class="lighter">11-28-14</h2><h2 class="bold">Ron, thanks again for sending me the docu...</h2>
-                <img class="pfp" src="/Images/ben-wyatt.webp" alt=""><h2 class="lighter">11-19-14</h2><h2 class="bold">Just a reminder that tomorrow will be the...</h2>
-                <img class="pfp" src="/Images/tom-haverford.jpg" alt=""><h2 class="lighter">11-11-14</h2><h2>Our meeting tomorrow has been moved fr...</h2>
-                <img class="pfp" src="/Images/donna-meagle.jpg" alt=""><h2 class="lighter">11-10-14</h2><h2>A big thanks to everyone who showed up...</h2>
-            </div>
-            <div class="boxFooter">
-                <a href="">More ></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="subBox">
-                <h2 class="red">13</h2>
-                <img src="/Images/alarm.png" alt="">
-                <h2>Outstanding required publications/communications</h2>
-            </div>
-
-            <div class="subBox">
-                <h2 class="blue">6</h2>
-                <img src="/Images/file.png" alt="">
-                <h2>Non-required publications or communications</h2>
-            </div>
-
-            <div class="subBox">
-                <h2 class="blue">28</h2>
-                <img src="/Images/briefcase.png" alt="">
-                <h2>Assigned training courses</h2>
-            </div>
-
-            <div class="subBox">
-                <h2 class="red">9</h2>
-                <img src="/Images/bubble.png" alt="">
-                <h2>Open user feedback items</h2>
-            </div>
-
-            <div class="subBox">
-                <h2 class="blue">11</h2>
-                <img src="/Images/calendar.png" alt="">
-                <h2>Scheduled events</h2>
-            </div>
-
-            <div class="subBox">
-                <h2 class="blue">13</h2>
-                <img src="/Images/check.png" alt="">
-                <h2>Project tasks pending your action</h2>
-            </div>
-        </div>
-    </div>
-
     </div>
 </body>
 </html>

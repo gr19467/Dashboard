@@ -1,10 +1,19 @@
+.wholeBox {
+  display: flex;
+}
+
 .mainArea {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.lighter {
+  opacity: 75%;
+  font-weight: lighter;
 }
 
 #mainpfp {
@@ -34,8 +43,14 @@
   color: #d3ecf7;
 }
 
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75vw;
+}
+
 .box {
-  width: 25vw;
+  width: 30vw;
   height: 30vw;
   border-radius: 10px;
   background-color: #f6f9fe;
@@ -45,11 +60,20 @@
   background-color: #f6f9fe;
   color: #63707e;
   width: 100%;
+  display: flex;
+}
+.box .boxHeader .icon {
+  width: 50px;
+  height: 50px;
 }
 .box .boxArea {
   background-color: #ffffff;
   color: #63707e;
   width: 100%;
+  font-size: 75%;
+}
+.box .boxArea .message {
+  display: flex;
 }
 .box .boxFooter {
   background-color: #ffffff;
@@ -60,7 +84,12 @@
   text-decoration: none;
 }
 .box .pfp {
-  border-radius: 50%;
+  border-radius: circle;
   width: 50px;
   height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.box .subBox .subImg {
+  width: 100px;
 }/*# sourceMappingURL=main.css.map */
