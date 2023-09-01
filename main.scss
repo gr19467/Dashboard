@@ -1,9 +1,28 @@
 $lightblue: #d3ecf7;
 $teal: #60c6d0;
+$basicGray: #63707e;
 $circle: 50%;
+$lighterGray: #dbdde2;
+$basicMargin: 1vw;
+
+body{
+    background-color: $teal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
 
 .wholeBox{
     display: flex;
+
+    width: 97vw;
+    height: 97vh;
+
+    background-color: #e4ebf3;
+
 }
 
 .mainArea{
@@ -16,14 +35,16 @@ $circle: 50%;
 }
 
 .lighter{
-    opacity: 75%;
+    color: $lighterGray;
     font-weight: lighter;
+    margin-left: $basicMargin;
+    margin-right: $basicMargin;
 }
 
 #mainpfp{
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: $circle;
 }
 
 .notification{
@@ -52,7 +73,7 @@ $circle: 50%;
     }
 
     #details{
-        color: #d3ecf7;
+        color: $lightblue;
     }
 }
 
@@ -66,7 +87,7 @@ $circle: 50%;
 
         .box{
             width: 30vw;
-            height: 30vw;
+            height: 20vw;
 
             border-radius: 10px;
 
@@ -77,7 +98,7 @@ $circle: 50%;
             .boxHeader{
                 background-color: #f6f9fe;
 
-                color: #63707e;
+                color: $basicGray;
 
                 width: 100%;
 
@@ -92,7 +113,7 @@ $circle: 50%;
             .boxArea{
                 background-color: #ffffff;
 
-                color: #63707e;
+                color: $basicGray;
 
                 width: 100%;
 
@@ -100,6 +121,10 @@ $circle: 50%;
 
                 .message{
                     display: flex;
+
+                    margin-top: 1vh;
+
+                    border-bottom: $lighterGray 1px solid;
                 }
             }
 
@@ -116,12 +141,13 @@ $circle: 50%;
             }
 
             .pfp{
-                border-radius: circle;
+                border-radius: $circle;
 
                 width: 50px;
                 height: 50px;
 
                 object-fit: cover;
+                margin-left: 2vw;
             }
 
             .subBox{
