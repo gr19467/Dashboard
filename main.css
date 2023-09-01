@@ -1,0 +1,66 @@
+.mainArea {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#mainpfp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.notification {
+  align-self: flex-start;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  width: 75vw;
+  background-color: #60c6d0;
+  color: #d3ecf7;
+  font-size: 75%;
+  white-space: nowrap;
+  border-radius: 10px;
+  padding: 10px;
+}
+.notification #calendar {
+  width: 50px;
+  height: 50px;
+}
+.notification #details {
+  color: #d3ecf7;
+}
+
+.box {
+  width: 25vw;
+  height: 30vw;
+  border-radius: 10px;
+  background-color: #f6f9fe;
+  box-shadow: 10px 10px 20px gray;
+}
+.box .boxHeader {
+  background-color: #f6f9fe;
+  color: #63707e;
+  width: 100%;
+}
+.box .boxArea {
+  background-color: #ffffff;
+  color: #63707e;
+  width: 100%;
+}
+.box .boxFooter {
+  background-color: #ffffff;
+  color: #70c3f4;
+  width: 100%;
+}
+.box .boxFooter .boxFooter a {
+  text-decoration: none;
+}
+.box .pfp {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}/*# sourceMappingURL=main.css.map */
