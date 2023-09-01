@@ -24,28 +24,69 @@ height: $height;
     margin-left: $left;
     font-size: $text;
 }
+.two {
+    background-color: partial.$sideDarkBlue;
+    color: partial.$lightBlue;
+    display: inline;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    height: 10px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    border-radius: 5px;
+}
 body {
     @extend %background;
-    
+    font-family:Arial, Helvetica, sans-serif;
 }
 .leftBar {
     background-color: white;
-    @include left(270px, 0px, 15px);
+    @include left(270px, 0px, 9px);
+    margin: 0px;
+    color: white;
 
 }
 .pages {
     background-color: partial.$sideBlue;
-    margin-top: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    color: partial.$grayText;
 }
 .tab {
     background-color: partial.$sideDarkBlue;
-    margin-bottom: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 6px;
+}
+.tab h1 {
     margin-top: 0px;
 }
 .logo  {
     padding: 15px;
     text-align: center;
+    color: partial.$logoColor;
+    font-size: 20px;
+    font-weight: bolder;
 }
 .pages img, .tab img {
     @include images(25px, 25px);
+    margin-right: 5px;
+}
+.pages div {
+    display: flex;
+    flex-direction: row;
+    padding-top: 6px;
+    margin-left: 17px;
+}
+.pages div h1 {
+    margin-top: 0px;
+    margin-left: 17px;
+}
+.pages div:first-child {
+    color: white;
 }
