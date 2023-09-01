@@ -72,6 +72,19 @@ body {
      object-fit: cover;
 }
 
+.smallBlueThing span {
+  width: 5px;
+  height: auto;
+  background-color: #60c6d0;
+  margin-left: 0px;
+}
+
+.smallBlueThing {
+  margin-left: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
 .pages img, .tab img {
   width: 25px;
   height: 25px;
@@ -83,6 +96,10 @@ body {
   flex-direction: row;
   padding-top: 6px;
   margin-left: 17px;
+}
+
+.pages span div {
+  margin-left: 12px;
 }
 
 .pages div h1 {
