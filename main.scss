@@ -1,6 +1,7 @@
-$lightblue: #d3ecf7;
+$blueWhite: #d3ecf7;
 $teal: #60c6d0;
 $basicGray: #63707e;
+$lightblue: #83c8eb;
 $circle: 50%;
 $lighterGray: #dbdde2;
 $basicMargin: 1vw;
@@ -18,6 +19,8 @@ body{
 .wholeBox{
     display: flex;
 
+    align-self: center;
+
     width: 97vw;
     height: 97vh;
 
@@ -28,6 +31,8 @@ body{
 .mainArea{
     display: flex;
     flex-direction: column;
+
+    justify-content: space-evenly;
 }
 
 .bold{
@@ -41,14 +46,28 @@ body{
     margin-right: $basicMargin;
 }
 
+.mainArea h1{
+    font-size: 125%;
+    color: #6984a5;
+}
+
+h2{
+    margin-left: .5vw;
+}
+
 #mainpfp{
     width: 200px;
     height: 200px;
     border-radius: $circle;
+    border: $lighterGray 3px solid;
+
+    align-self: center;
+
+    margin-top: $basicMargin;
 }
 
 .notification{
-    align-self: flex-start;
+    align-self: center;
     align-content: center;
     justify-content: center;
 
@@ -58,7 +77,7 @@ body{
 
     background-color: $teal;
 
-    color: $lightblue;
+    color: $blueWhite;
     font-size: 75%;
 
     white-space: nowrap;
@@ -73,7 +92,7 @@ body{
     }
 
     #details{
-        color: $lightblue;
+        color: $blueWhite;
     }
 }
 
@@ -91,22 +110,63 @@ body{
 
             border-radius: 10px;
 
-            background-color: #f6f9fe;
+            background-color: #ffffff;
 
             box-shadow: 10px 10px 20px gray;
+
+            margin: $basicMargin;
 
             .boxHeader{
                 background-color: #f6f9fe;
 
                 color: $basicGray;
 
-                width: 100%;
+                height: 7vh;
 
                 display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                padding-left: 2vw;
+
+                border-bottom: $lighterGray 2px solid;
+
+                margin-bottom: 0;
 
                 .icon{
-                    width: 50px;
-                    height: 50px;
+                    width: 30px;
+                    height: 30px;
+                }
+
+                .sectionHeader{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    align-self: center;
+
+                    width: 5vw;
+                }
+
+                .add{
+                    align-self: center;
+
+                    height: 5vh;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+
+                    padding: 10px;
+                    padding-top: 0;
+                    padding-bottom: 0;
+
+                    margin-right: 2vw;
+
+                    border: $lighterGray 1px solid;
+
+                    color: $lightblue;
+                    font-size: 75%;
                 }
             }
 
@@ -150,10 +210,69 @@ body{
                 margin-left: 2vw;
             }
 
+            #boxContainer{
+                background-color: transparent;
+            }
+
+            .subBoxRow{
+                display: flex;
+                justify-content: space-between;
+            }
+
             .subBox{
+                width: 14.5vw;
+                height: 7vw;
+                background-color: #ffffff;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                border-radius: 10px;
 
                 .subImg{
-                    width: 100px;
+                    width: 50px;
+                    height: 50px;
+
+                    align-self: center;
+                }
+
+                .blue{
+                    align-self: flex-end;
+                    margin-right: $basicMargin;
+
+                    background-color: $lighterGray;
+                    border-radius: 10px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+
+                    color: $teal;
+
+                    font-size: 120%;
+                }
+                
+                .red{
+                    align-self: flex-end;
+                    margin-right: $basicMargin;
+
+                    background-color: $lighterGray;
+                    border-radius: 10px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+
+                    color: #e33e5f;
+
+                    font-size: 120%;
                 }
             }
+}
+
+#welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .check{
+        display: flex;
+    }
 }

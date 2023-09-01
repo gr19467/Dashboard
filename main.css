@@ -8,6 +8,7 @@ body {
 
 .wholeBox {
   display: flex;
+  align-self: center;
   width: 97vw;
   height: 97vh;
   background-color: #e4ebf3;
@@ -16,6 +17,7 @@ body {
 .mainArea {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .bold {
@@ -29,14 +31,26 @@ body {
   margin-right: 1vw;
 }
 
+.mainArea h1 {
+  font-size: 125%;
+  color: #6984a5;
+}
+
+h2 {
+  margin-left: 0.5vw;
+}
+
 #mainpfp {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: #dbdde2 3px solid;
+  align-self: center;
+  margin-top: 1vw;
 }
 
 .notification {
-  align-self: flex-start;
+  align-self: center;
   align-content: center;
   justify-content: center;
   display: flex;
@@ -66,18 +80,45 @@ body {
   width: 30vw;
   height: 20vw;
   border-radius: 10px;
-  background-color: #f6f9fe;
+  background-color: #ffffff;
   box-shadow: 10px 10px 20px gray;
+  margin: 1vw;
 }
 .box .boxHeader {
   background-color: #f6f9fe;
   color: #63707e;
-  width: 100%;
+  height: 7vh;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-left: 2vw;
+  border-bottom: #dbdde2 2px solid;
+  margin-bottom: 0;
 }
 .box .boxHeader .icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+}
+.box .boxHeader .sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: center;
+  width: 5vw;
+}
+.box .boxHeader .add {
+  align-self: center;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 2vw;
+  border: #dbdde2 1px solid;
+  color: #83c8eb;
+  font-size: 75%;
 }
 .box .boxArea {
   background-color: #ffffff;
@@ -106,6 +147,53 @@ body {
      object-fit: cover;
   margin-left: 2vw;
 }
+.box #boxContainer {
+  background-color: transparent;
+}
+.box .subBoxRow {
+  display: flex;
+  justify-content: space-between;
+}
+.box .subBox {
+  width: 14.5vw;
+  height: 7vw;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
 .box .subBox .subImg {
-  width: 100px;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
+.box .subBox .blue {
+  align-self: flex-end;
+  margin-right: 1vw;
+  background-color: #dbdde2;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #60c6d0;
+  font-size: 120%;
+}
+.box .subBox .red {
+  align-self: flex-end;
+  margin-right: 1vw;
+  background-color: #dbdde2;
+  border-radius: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: #e33e5f;
+  font-size: 120%;
+}
+
+#welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#welcome .check {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

@@ -60,9 +60,9 @@
         <div class="mainArea">
             <div class="notification">
                 <img src="/Images/calendar2.png" alt="" id="calendar">
-                <h1>JetBlue Christmas Party is</h1>
-                <h1 class="bold">Today at 7pm.</h1>
-                <a href="" id="details"><h1>See details.</h1></a>
+                <h3>JetBlue Christmas Party is</h3>
+                <h3 class="bold">Today at 7pm.</h3>
+                <a href="" id="details"><h3>See details.</h3></a>
             </div>
 
             <div class="boxes">
@@ -72,14 +72,16 @@
                         <div class="boxHeader">
                             <h1>Welcome, Ron</h1>
                         </div>
-                        <div class="boxArea">
+                        <div class="boxArea" id="welcome">
                             <img src="/Images/ron-swanson.avif" alt="" id="mainpfp">
                             <label for="cars">Logged in as</label>
                             <select>
-                                <option value="volvo">BITS Administrator</option>
-                                <option value="saab">Employee</option>
+                                <option>BITS Administrator</option>
+                                <option>Employee</option>
                             </select>
+                            <div class="check">
                             <input type="checkbox"><h2>Keep me logged in today</h2>
+                            </div>
                         </div>
                         <div class="boxFooter">
                             <a href="">My Profile ></a>
@@ -88,8 +90,11 @@
 
                     <div class="box">
                         <div class="boxHeader">
-                            <img class="icon" src="/Images/inbox2.png" alt="">
-                            <h1>Inbox</h1>
+                            <div class="sectionHeader">
+                                <img class="icon" src="/Images/inbox2.png" alt="">
+                                <h1>Inbox</h1>
+                            </div>
+
                             <div class="add">
                                 <img class="icon" src="/Images/compose.png" alt=""><h2>Compose</h2>
                             </div>
@@ -127,8 +132,10 @@
                 <div class="boxRow">
                     <div class="box">
                         <div class="boxHeader">
-                            <img class="icon" src="/Images/alert.png" alt="">
-                            <h1>Alerts</h1>
+                            <div class="sectionHeader">
+                                <img class="icon" src="/Images/alert.png" alt="">
+                                <h1>Alerts</h1>
+                            </div>
                             <div class="add">
                                 <img class="icon" src="/Images/plus.png" alt=""><h2>New</h2>
                             </div>
@@ -159,41 +166,45 @@
                         </div>
                     </div>
 
-                    <div class="box">
-                        <div class="subBox">
-                            <h2 class="red">13</h2>
-                            <img class="subImg" src="/Images/alarm.png" alt="">
-                            <h2>Outstanding required publications/communications</h2>
+                    <div class="box" id="boxContainer">
+                        <div class="subBoxRow">
+                            <div class="subBox">
+                                <h2 class="red">13</h2>
+                                <img class="subImg" src="/Images/alarm.png" alt="">
+                                <h2>Outstanding required publications/communications</h2>
+                            </div>
+                        
+                            <div class="subBox">
+                                <h2 class="blue">6</h2>
+                                <img class="subImg" src="/Images/file.png" alt="">
+                                <h2>Non-required publications or communications</h2>
+                            </div>
                         </div>
+                        <div class="subBoxRow">
+                            <div class="subBox">
+                                <h2 class="blue">28</h2>
+                                <img class="subImg" src="/Images/briefcase.png" alt="">
+                                <h2>Assigned training courses</h2>
+                            </div>
 
-                        <div class="subBox">
-                            <h2 class="subImg" class="blue">6</h2>
-                            <img src="/Images/file.png" alt="">
-                            <h2>Non-required publications or communications</h2>
+                            <div class="subBox">
+                                <h2 class="red">9</h2>
+                                <img class="subImg" src="/Images/bubble.png" alt="">
+                                <h2>Open user feedback items</h2>
+                            </div>
                         </div>
+                        <div class="subBoxRow">
+                            <div class="subBox">
+                                <h2 class="blue">11</h2>
+                                <img class="subImg" src="/Images/calendar.png" alt="">
+                                <h2>Scheduled events</h2>
+                            </div>
 
-                        <div class="subBox">
-                            <h2 class="blue">28</h2>
-                            <img class="subImg" src="/Images/briefcase.png" alt="">
-                            <h2>Assigned training courses</h2>
-                        </div>
-
-                        <div class="subBox">
-                            <h2 class="red">9</h2>
-                            <img class="subImg" src="/Images/bubble.png" alt="">
-                            <h2>Open user feedback items</h2>
-                        </div>
-
-                        <div class="subBox">
-                            <h2 class="blue">11</h2>
-                            <img class="subImg" src="/Images/calendar.png" alt="">
-                            <h2>Scheduled events</h2>
-                        </div>
-
-                        <div class="subBox">
-                            <h2 class="blue">13</h2>
-                            <img class="subImg" src="/Images/check.png" alt="">
-                            <h2>Project tasks pending your action</h2>
+                            <div class="subBox">
+                                <h2 class="blue">13</h2>
+                                <img class="subImg" src="/Images/check.png" alt="">
+                                <h2>Project tasks pending your action</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
