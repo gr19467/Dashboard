@@ -46,7 +46,7 @@ h2 {
   align-self: center;
   display: flex;
   align-content: center;
-  justify-content: left;
+  justify-content: space-between;
   margin-top: 1vw;
   width: 70vw;
   height: 3vh;
@@ -63,6 +63,8 @@ h2 {
 .notification #calendar {
   width: 20px;
   height: 20px;
+  align-self: center;
+  margin-right: 0.5vw;
 }
 .notification #details {
   color: #d3ecf7;
@@ -71,8 +73,9 @@ h2 {
   display: flex;
   align-self: center;
   justify-content: space-evenly;
-  width: 19vw;
-  margin-left: 1vw;
+  align-content: center;
+  width: 23vw;
+  margin-left: 0.5vw;
 }
 
 .boxes {

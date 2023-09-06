@@ -57,7 +57,7 @@ h2{
 
     display: flex;
     align-content: center;
-    justify-content: left;
+    justify-content: space-between;
 
     margin-top: $basicMargin;
 
@@ -81,6 +81,9 @@ h2{
     #calendar{
         width: 20px;
         height: 20px;
+        align-self: center;
+
+        margin-right: .5vw;
     }
 
     #details{
@@ -91,9 +94,10 @@ h2{
         display: flex;
         align-self: center;
         justify-content: space-evenly;
+        align-content: center;
 
-        width: 19vw;
-        margin-left: $basicMargin;
+        width: 23vw;
+        margin-left: .5vw;
     }
 }
 
