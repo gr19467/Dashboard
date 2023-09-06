@@ -60,9 +60,11 @@
         <div class="mainArea">
             <div class="notification">
                 <img src="/Images/calendar2.png" alt="" id="calendar">
+                <div id="text">
                 <h3>JetBlue Christmas Party is</h3>
                 <h3 class="bold">Today at 7pm.</h3>
                 <a href="" id="details"><h3>See details.</h3></a>
+                </div>
             </div>
 
             <div class="boxes">
@@ -76,15 +78,16 @@
                             <img src="/Images/ron-swanson.avif" alt="" id="mainpfp">
                             <label for="cars">Logged in as</label>
                             <select>
-                                <option>BITS Administrator</option>
-                                <option>Employee</option>
+                                <option class="lighter" value="BITS Administrator">BITS Administrator</option>
+                                <option class="lighter" value="Employee">Employee</option>
                             </select>
                             <div class="check">
                             <input type="checkbox"><h2>Keep me logged in today</h2>
-                            </div>
+                            <span class="checkmark"></span>
                         </div>
-                        <div class="boxFooter">
-                            <a href="">My Profile ></a>
+                        </div>
+                        <div class="boxFooter" id="myProfile">
+                            <a class="footerLink" href="">My Profile ></a>
                         </div>
                     </div>
 
@@ -123,7 +126,7 @@
 
                         </div>
                         <div class="boxFooter">
-                            <a href="">More ></a>
+                            <a class="footerLink" href="">More ></a>
                         </div>
                     </div>
                 </div>
@@ -162,11 +165,11 @@
                             </div>    
                         </div>
                         <div class="boxFooter">
-                            <a href="">More ></a>
+                            <a class="footerLink" href="">More ></a>
                         </div>
                     </div>
 
-                    <div class="box" id="boxContainer">
+                    <div class="box">
                         <div class="subBoxRow">
                             <div class="subBox">
                                 <h2 class="red">13</h2>
