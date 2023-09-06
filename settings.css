@@ -341,10 +341,12 @@ hr {
 .topBottom div:first-child {
   color: rgb(37, 37, 111);
 }
- a {
-    text-decoration: none;
- }
+
 .pages a {
   text-decoration: none;
   color: white;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=settings.css.map */
